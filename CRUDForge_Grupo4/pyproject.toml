@@ -1,0 +1,15 @@
+[project]
+name = "crudforge"
+version = "1.0.0"
+description = "Compilador DSL para generar operaciones CRUD"
+requires-python = ">=3.10"
+
+[project.scripts]
+crudforge = "main:main"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["main", "semantic_analyzer"]

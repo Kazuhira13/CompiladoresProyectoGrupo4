@@ -1,0 +1,5 @@
+Metadata-Version: 2.4
+Name: crudforge
+Version: 1.0.0
+Summary: Compilador DSL para generar operaciones CRUD
+Requires-Python: >=3.10

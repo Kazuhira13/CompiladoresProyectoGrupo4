@@ -1,0 +1,60 @@
+{
+    "entity": "Producto",
+    "fields": [
+        {
+            "name": "id",
+            "type": "uuid",
+            "reference": null,
+            "constraints": {
+                "pk": true
+            }
+        },
+        {
+            "name": "nombre",
+            "type": "string",
+            "reference": null,
+            "constraints": {
+                "required": true,
+                "min": 5
+            }
+        },
+        {
+            "name": "precio",
+            "type": "decimal",
+            "reference": null,
+            "constraints": {
+                "gt": 0.0
+            }
+        },
+        {
+            "name": "stock",
+            "type": "int",
+            "reference": null,
+            "constraints": {
+                "default": "0"
+            }
+        },
+        {
+            "name": "categoria",
+            "type": "reference",
+            "reference": "Categoria",
+            "constraints": {}
+        }
+    ],
+    "indexes": [
+        "nombre",
+        "precio"
+    ],
+    "api_options": [
+        "full",
+        "with",
+        "pagination",
+        "search"
+    ],
+    "ui_options": [
+        "generate",
+        "with",
+        "filters",
+        "sortable"
+    ]
+}

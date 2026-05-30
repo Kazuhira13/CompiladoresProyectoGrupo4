@@ -1,0 +1,10 @@
+entity Producto
+fields:
+id uuid pk
+nombre string required min=5
+nombre string
+precio string >0
+stock int default=abc
+indexes: nombre, precio
+api full with pagination search
+ui generate with filters sortable

@@ -1,0 +1,9 @@
+README.md
+main.py
+pyproject.toml
+semantic_analyzer.py
+crudforge.egg-info/PKG-INFO
+crudforge.egg-info/SOURCES.txt
+crudforge.egg-info/dependency_links.txt
+crudforge.egg-info/entry_points.txt
+crudforge.egg-info/top_level.txt
